@@ -71,17 +71,17 @@ body{
     font-weight: 400;
     color: #555;
     position: relative;
-    max-width:100%;
     height:100vh;
+  
 }
 /* header*/
 header{
     height:8.4rem;
-    position: fixed;
+    /* position: fixed;
     top:0;
     left:0;
-    width:100%;
-    z-index: 999;
+    z-index: 999; */
+    
 }
 .container{
     background-color:#fdf2e9;
@@ -92,6 +92,7 @@ header{
 height:4rem;
 padding: 1rem 0;
 cursor: pointer;
+position: relative;
 }
 header nav{
     display: flex;
@@ -133,17 +134,17 @@ background-color: #d66b0e;
 
 /* hero section */
 .hero-section{
-    margin-top:6.2rem;
-    padding-top: 2.3rem;
+    padding-top: 8rem;
     padding-bottom: 2.9rem;
     background-color:#fdf2e9;
+    
 }
 .hero{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 1rem;
     padding:2rem 6rem;
-    max-width: 120rem;
+    
 }
 .hero-text{
     width: 84%;
@@ -464,4 +465,75 @@ font-weight: 400;
 .footer .footerlogos{
     display: flex;
     list-style: none;
+}
+
+.nav.active{
+    height:110rem;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    width:100%;
+    top:0;
+    right: 0;
+    z-index: 999;
+    transition: all 3s ease-in-out;
+    transform: translateX(0);
+}
+.bgd{
+    display:none;
+}
+.cls{
+    display: none;
+}
+@media screen and (max-width:900px)
+{
+    
+ .logo{
+    text-align: center;
+    margin-bottom: 10rem;
+    padding-top:8rem;
+ }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap:10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlinks{
+        flex-direction: column;
+        gap:12rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        display: none;
+    }
+    .showburger{
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: 1000;
+        display: block;
+    }
+    .closebtn{
+        position: absolute;
+        top:0;
+        right:0;
+        
+        z-index: 1000;
+    }
+
+   .bgd{
+        display:block;
+    }
+    .icons-open{
+        width:4rem;
+        height: 4rem;
+    }
+    .icons-close{
+        width:4rem;
+        height: 4rem;
+    }
+
 }
