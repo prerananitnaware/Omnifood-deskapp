@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/index.js"></script>
+    
   </head>
   <body>
     <header class="container">
@@ -21,13 +21,23 @@
           /></a>
         </div>
         <ul class="navlinks">
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Meals</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="#how-works">How it Works</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="testimonials">Testimonials</a></li>
+          <li><a href="pricing">Pricing</a></li>
           <li><a class="btnlink" href="#">Try for Free</a></li>
         </ul>
       </nav>
+      <button class="showburger bgd">
+        <svg class="icons-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      </button>
+      <button class="closebtn cls">
+        <svg class="icons-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+      </button>
     </header>
     <main>
       <section class="hero-section">
@@ -132,14 +142,14 @@
           />
         </div>
       </section>
-      <section class="container HowToCall">
+      <section id="how-works" class="container HowToCall">
         <div>
           <h2 class="subheading">How it works</h2>
           <h1 class="heading-primary">
             Your daily dose of health in 3 simple steps
           </h1>
         </div>
-        <div class="how-container">
+        <div  class="how-container">
           <div class="how-itmes">
             <div class="how-text">
               <h2 class="how-title">01</h2>
@@ -199,7 +209,7 @@
           </div>
         </div>
       </section>
-      <section class="container meals">
+      <section id="meals" class="container meals">
         <div class="meals-heading">
           <h2 class="text-center subheading">MEALS</h2>
           <h1 class="heading-primary text-center">
@@ -443,7 +453,7 @@
       </section>
       <hr />
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="items">
         <h2 class="subheading"> <a href="#"
             ><img class="logo-img" src="img/omnifood-logo.png" alt="logo"
@@ -496,5 +506,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
